@@ -1,301 +1,484 @@
-*{
-    padding: 0;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(36, 36, 36);
+}
+.padre {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+  background-image: url(imagenes/fonto.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100%;
+}
+.Home {
+  width: 90%;
+  left: 10%;
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: rgb(199, 199, 199);
+}
+.titulohome {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.247);
+  padding: 0% 6% 15% 5%;
+  font-size: 30px;
+  background-color: rgba(250, 235, 215, 0);
+}
+.conocimiento {
+  text-align: center;
+  background-color: rgb(36, 36, 36);
+  width: 100%;
+  height: 100%;
+  background-image: url(imagenes/fonto2.png);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  color: rgb(199, 199, 199);
+  box-shadow: inset 2px 0px 30px 0px rgba(0, 0, 0, 0.75);
+}
+.cajita {
+  background-color: rgba(255, 0, 0, 0);
+  border-radius: 10px;
+  margin: 0px 2% 0px 3%;
+  transition: all 200ms cubic-bezier(0.2, 0, 0, 0.8);
+  box-shadow: 5px 0px 30px 0px rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+  font-size: 28vh;
+  height: 40%;
+  width: 25%;
+}
+.cajita:hover {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(210, 218, 0);
+  color: rgb(202, 209, 0);
+  transform: scale(1.05);
+}
+.cajita1:hover {
+  border-style: solid;
+  border-radius: 15px;
+  border-color: rgb(218, 105, 0);
+  color: rgb(218, 105, 0);
+}
+.cajita2:hover {
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #0096dc;
+  color: #0096dc;
+}
+.cajita3:hover {
+  border-style: solid;
+  border-radius: 15px;
+  border-color: rgb(210, 218, 0);
+  color: rgb(202, 209, 0);
+}
+.cajita4:hover {
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #ce679a;
+  color: #ce679a;
+}
+.cajita5:hover {
+  border-style: solid;
+  border-radius: 15px;
+  border-color: rgb(89, 197, 240);
+  color: rgb(71, 194, 243);
+}
+.cajita6:hover {
+  border-style: solid;
+  border-radius: 15px;
+  border-color: rgb(0, 178, 233);
+  color: rgb(0, 178, 233);
+}
+
+.Portafolio {
+  text-align: center;
+  background-color: rgb(36, 36, 36);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-image: url(imagenes/fonto.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  color: rgb(199, 199, 199);
+  box-shadow: inset 20px 0px 30px 0px rgba(0, 0, 0, 0.75);
+}
+.contenedorport {
+  background-color: #ce679b00;
+  width: 88%;
+  height: 94%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  padding: 0;
+  border-radius: 10px;
+}
+.contenedorhijo1 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+}
+.contenedorhijo2 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+}
+.contenedorhijo3 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+}
+.cajaport1 {
+  background-color: rgb(18, 18, 66);
+  width: 100%;
+  height: 200%;
+  margin: 1% 0;
+  border-radius: 5px;
+  background-image: url(imagenes/portafolio1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.cajaport2 {
+  background-color: rgb(18, 18, 66);
+  width: 100%;
+  height: 100%;
+  margin: 1% 0;
+  border-radius: 5px;
+}
+.cajaport3 {
+  background-color: rgb(18, 18, 66);
+  width: 100%;
+  height: 100%;
+  margin: 1% 0;
+  border-radius: 5px;
+}
+.cajaport4 {
+  background-color: rgb(18, 18, 66);
+  width: 100%;
+  height: 100%;
+  margin: 1% 0;
+  border-radius: 5px;
+}
+.cajaport5 {
+  background-color: rgb(18, 18, 66);
+  width: 100%;
+  height: 150%;
+  margin: 1% 0;
+  border-radius: 5px;
+}
+.cajaport {
+  background-color: rgba(51, 51, 51, 0.322);
+  transition: all 200ms cubic-bezier(0.2, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgba(245, 245, 220, 0);
+}
+.cajaport:hover {
+  background-color: rgba(51, 51, 51, 0.925);
+  transform: scale(1.02);
+  backdrop-filter: blur(15px);
+  color: rgb(255, 255, 255);
+}
+.cajaport1:hover {
+  background-image: url(imagenes/portafolio.png);
+}
+
+.Contactame {
+  text-align: center;
+  background-color: rgb(36, 36, 36);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(199, 199, 199);
+}
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(11, 11, 11, 0.014);
+  height: 100%;
+  width: 10%;
+  padding: 5% 0;
+  box-shadow: 5px 0px 25px 10px rgba(0, 0, 0, 0.315);
+  backdrop-filter: blur(5px);
+}
+.fotodiv {
+  opacity: 90%;
+  border-radius: 100%;
+  max-width: 85%;
+  position: static;
+  border-style: solid;
+  border-color: rgb(199, 199, 199);
+  transition: all 1500ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+figure {
+  margin-bottom: 90%;
+  color: rgb(199, 199, 199);
+  font-size: 18px;
+}
+.fotodiv:hover {
+  border-style: solid;
+  border-color: rgba(255, 255, 0, 0.459);
+  box-shadow: 0px 0px 10px -1px rgba(247, 255, 0, 1);
+  opacity: 100%;
+}
+
+.botones {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: rgb(199, 199, 199);
+  margin-bottom: 10%;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 1500ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+.botones:hover {
+  transform: scale(1.1);
+  color: yellow;
+}
+@media (min-width: 900px) and (max-width: 1600px) {
+  .imagenhome {
+    width: 500px;
+  }
+  .titulohome {
+    font-size: 3vh;
+  }
+  .cajita1 {
+    margin-left: 10%;
+  }
+  .cajita2 {
+    margin-left: 10%;
+  }
+  .botones {
+    font-size: 12px;
+  }
+  .botones:hover {
+    color: yellow;
+    font-size: 11px;
+  }
+  .conocimiento {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+  }
+  .cajita {
+    font-size: 25vh;
+  }
+}
+@media (min-width: 820px) and (max-width: 1180px) {
+
+  .botones {
+    font-size: 12px;
+  }
+  .imagenhome {
+    width: 350px;
+  }
+  .titulohome {
+    font-size: 3vh;
+  }
+  .botones:hover {
+    color: yellow;
+    font-size: 11px;
+  }
+  .conocimiento {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+  }
+  .cajita1 {
+    margin-left: 10%;
+  }
+  .cajita2 {
+    margin-left: 10%;
+  }
+  .cajita3 {
+    margin-left: 10%;
+  }
+  .cajita {
+    font-size: 22vh;
+    height: 30%;
+    width: 35%;
+  }
+  .cajita:hover {
+    font-size: 23vh;
+    border-radius: 15px;
+  }
+}
+@media (min-width: 480px) and (max-width: 819px) {
+  .contenedorport {
     margin: 0;
-    box-sizing: border-box;
-}
-
-body{
-    height: 100vh;
-    background-color: rgb(36, 36, 36);
-}
-.padre{
-    height: 100%;
+  }
+  nav {
+    display: none;
+  }
+  .imagenhome {
+    width: 250px;
+  }
+  .titulohome {
+    font-size: 3vh;
+  }
+  .botones {
+    font-size: 8px;
+  }
+  .botones:hover {
+    color: yellow;
+    font-size: 7px;
+  }
+  figure {
+    display: none;
+  }
+  .conocimiento {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    font-family: 'Poppins', sans-serif;
-    background-image:url(imagenes/fonto.png);
-    max-height: 100%;
-}
-.Home{
-    width: 90%;
-    left: 10%;
-    position: relative;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items:center;
-    color: rgb(199, 199, 199);
-
-}
-.titulohome{
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.247);
-    padding: 0% 6% 15% 5%;
-    font-size: 30px;
-    background-color: rgba(250, 235, 215, 0);
-}
-.conocimiento{
-    text-align: center;
-    background-color: rgb(36, 36, 36);
-    width: 100%;
-    height: 100%;
-    background-image:url(imagenes/fonto2.png);
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: flex-end;
-    align-items: center;
-    color: rgb(199, 199, 199);
-    box-shadow: inset 2px 0px 30px 0px rgba(0, 0, 0, 0.75);
-
-}
-.cajita{
-    background-color: rgba(255, 0, 0, 0);
-    border-radius: 10px;
-    margin: 0px 2% 0px 3%;
-    transition:all 200ms cubic-bezier(0.2, 0, 0, 0.8);
-    box-shadow: 5px 0px 30px 0px rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(5px);
-    font-size: 28vh;
-    height: 40%;
-    width: 25%;
-}
-.cajita:hover{
+  }
+  .cajita {
+    height: 28%;
+    width: 45%;
+    font-size: 20vh;
+  }
+  .cajita:hover {
     border-style: solid;
     border-radius: 10%;
     border-color: rgb(210, 218, 0);
     color: rgb(202, 209, 0);
-    font-size: 30vh;
-}
-.cajita1:hover{
+    font-size: 22vh;
+  }
+  .cajita1:hover {
     border-style: solid;
     border-radius: 10%;
     border-color: rgb(218, 105, 0);
     color: rgb(218, 105, 0);
-}
-.cajita2:hover{
+  }
+  .cajita2:hover {
     border-style: solid;
     border-radius: 10%;
     border-color: #0096dc;
     color: #0096dc;
-}
-.cajita3:hover{
+  }
+  .cajita3:hover {
     border-style: solid;
     border-radius: 10%;
     border-color: rgb(210, 218, 0);
     color: rgb(202, 209, 0);
-}
-.cajita4:hover{
+  }
+  .cajita4:hover {
     border-style: solid;
     border-radius: 10%;
-    border-color:#ce679a;
-    color:#ce679a;
-}
-.cajita5:hover{
+    border-color: #ce679a;
+    color: #ce679a;
+  }
+  .cajita5:hover {
     border-style: solid;
     border-radius: 10%;
     border-color: rgb(89, 197, 240);
     color: rgb(71, 194, 243);
-}
-.cajita6:hover{
+  }
+  .cajita6:hover {
     border-style: solid;
     border-radius: 10%;
     border-color: rgb(0, 178, 233);
     color: rgb(0, 178, 233);
+  }
 }
-
-.Portafolio{
-    text-align: center;
-    background-color: rgb(36, 36, 36);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(199, 199, 199);
-    box-shadow: inset 20px 0px 30px 0px rgba(0, 0, 0, 0.75);
-}
-.contenedorport{
-    background-color: #ce679a;
-    width: 85%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-left: 10% ;
-    border-radius: 20px;
-}
-.cajaport1{
-    background-color: blue;
-    width: 450px;
-    height: 350px;
-    margin: 2%;
-    border-radius: 10px;
-}
-
-.Contactame{
-    text-align: center;
-    background-color: rgb(36, 36, 36);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(199, 199, 199);
-
-}
-nav{
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: rgba(11, 11, 11, 0.014);
-    height: 100%;
-    width: 10%;
-    padding: 5% 0;
-    box-shadow: 5px 0px 120px 0px rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(5px)
-}
-.fotodiv{
-    opacity: 90%;
-    border-radius: 100%;
-    max-width: 85%;
-    position:static;
-    border-style: solid;
-    border-color: rgb(199, 199, 199);
-    transition:all 1500ms cubic-bezier(0.2, 0, 0, 0.8);
-}
-figure{
-    margin-bottom: 90%;
-    color: rgb(199, 199, 199);
-    font-size: 18px;
-    
-}
-.fotodiv:hover{
-    border-style: solid;
-    border-color: rgba(255, 255, 0, 0.459);
-    box-shadow: 0px 0px 10px -1px rgba(247,255,0,1);
-    opacity: 100%;
-}
-
-.botones{
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(199, 199, 199);
-    margin-bottom: 10%;
-    text-decoration: none;
-    font-size: 18px;
-    transition:all 1500ms cubic-bezier(0.2, 0, 0, 0.8);
-}
-.botones:hover{
-    transform: scale(1.1);
+@media (min-width: 200px) and (max-width: 480px) {
+  .contenedorport {
+    margin: 0;
+  }
+  nav {
+    display: none;
+  }
+  .imagenhome,
+  .titulohome {
+    width: 220px;
+    font-size: 2vh;
+  }
+  .botones {
+    font-size: 8px;
+  }
+  .botones:hover {
     color: yellow;
-    
-}
-@media (min-width: 900px) and (max-width: 1600px){
-    .botones{
-        font-size: 12px;
-    }
-    .botones:hover{
-        color: yellow;
-        font-size: 11px;
-    }
-    .conocimiento{
-        flex-direction: column;
-        display: flex;
-        justify-content: space-around
-    }
-    .cajita{
-
-        font-size: 25vh;
-    }
-}
-@media (min-width: 720px) and (max-width: 1280px){
-    .botones{
-        font-size: 12px;
-    }
-    .imagenhome, .titulohome{
-        width: 500px;
-        font-size: 5vh;
-    }
-    .botones:hover{
-        color: yellow;
-        font-size: 11px;
-    }
-    .conocimiento{
-        flex-direction: column;
-        display: flex;
-        justify-content: space-around
-    }
-    .cajita{
-        font-size: 25vh;
-    }
-}
-@media (min-width: 480px) and (max-width: 819px){
-    .imagenhome, .titulohome{
-        width: 250px;
-        font-size: 3vh;
-    }
-    .botones{
-        font-size: 8px;
-    }
-    .botones:hover{
-        color: yellow;
-        font-size: 7px;
-    }
-    figure{
-        display: none;
-    }
-    .conocimiento{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    .cajita{
-        height: 28%;
-        width: 45%;
-        font-size: 20vh;
-    }
-    .cajita:hover{
-        border-style: solid;
-        border-radius: 10%;
-        border-color: rgb(210, 218, 0);
-        color: rgb(202, 209, 0);
-        font-size: 22vh;
-    }
-    .cajita1:hover{
-        border-style: solid;
-        border-radius: 10%;
-        border-color: rgb(218, 105, 0);
-        color: rgb(218, 105, 0);
-    }
-    .cajita2:hover{
-        border-style: solid;
-        border-radius: 10%;
-        border-color: #0096dc;
-        color: #0096dc;
-    }
-    .cajita3:hover{
-        border-style: solid;
-        border-radius: 10%;
-        border-color: rgb(210, 218, 0);
-        color: rgb(202, 209, 0);
-    }
-    .cajita4:hover{
-        border-style: solid;
-        border-radius: 10%;
-        border-color:#ce679a;
-        color:#ce679a;
-    }
-    .cajita5:hover{
-        border-style: solid;
-        border-radius: 10%;
-        border-color: rgb(89, 197, 240);
-        color: rgb(71, 194, 243);
-    }
-    .cajita6:hover{
-        border-style: solid;
-        border-radius: 10%;
-        border-color: rgb(0, 178, 233);
-        color: rgb(0, 178, 233);
-    }
+    font-size: 7px;
+  }
+  figure {
+    display: none;
+  }
+  .conocimiento {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .cajita {
+    height: 28%;
+    width: 45%;
+    font-size: 18vh;
+  }
+  .cajita:hover {
+    border-style: solid;
+    border-radius: 10%;
+    border-color: rgb(210, 218, 0);
+    color: rgb(202, 209, 0);
+    font-size: 19vh;
+  }
+  .cajita1:hover {
+    border-style: solid;
+    border-radius: 10%;
+    border-color: rgb(218, 105, 0);
+    color: rgb(218, 105, 0);
+  }
+  .cajita2:hover {
+    border-style: solid;
+    border-radius: 10%;
+    border-color: #0096dc;
+    color: #0096dc;
+  }
+  .cajita3:hover {
+    border-style: solid;
+    border-radius: 10%;
+    border-color: rgb(210, 218, 0);
+    color: rgb(202, 209, 0);
+  }
+  .cajita4:hover {
+    border-style: solid;
+    border-radius: 10%;
+    border-color: #ce679a;
+    color: #ce679a;
+  }
+  .cajita5:hover {
+    border-style: solid;
+    border-radius: 10%;
+    border-color: rgb(89, 197, 240);
+    color: rgb(71, 194, 243);
+  }
+  .cajita6:hover {
+    border-style: solid;
+    border-radius: 10%;
+    border-color: rgb(0, 178, 233);
+    color: rgb(0, 178, 233);
+  }
+  .cajaport {
+    font-size: 1.4vh;
+  }
 }
