@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -40,6 +41,8 @@ body {
   width: 100%;
   height: 100%;
   background-image: url(imagenes/fonto2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -203,14 +206,132 @@ body {
 }
 
 .Contactame {
-  text-align: center;
   background-color: rgb(36, 36, 36);
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   color: rgb(199, 199, 199);
+  background-image: url(imagenes/fonto2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 2px 0px 30px 0px rgba(0, 0, 0, 0.75);
+}
+.formulariolinks{
+  background-color: rgba(87, 87, 87, 0.253);
+  width: 32%;
+  height: 65%;
+  margin-left: 10%;
+  font-size: 2.2vh;
+  padding: 1%;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  box-shadow: 5px 0px 25px 10px rgba(0, 0, 0, 0.315);
+}
+.informacion{
+  margin-bottom: 10%;
+}
+
+.redes{
+  margin: 10% 0 10% 0;
+}
+.vinculos1{
+  color: white;
+  font-size: 2.5vh;
+}
+.vinculos{
+  font-size: 3vh;
+  margin: 0% 1% 0 1%;
+  color: white;
+  backdrop-filter: blur(5px);
+}
+.linkicon:hover{
+  color: #0059ff;
+}
+.igicon:hover{
+  color: #b95300;
+}
+.giticon:hover{
+  color: #c05a5a;
+}
+.formulario{
+  background-color: rgba(87, 87, 87, 0.253);
+  border-radius: 10px;
+  padding-top: 3%;
+  width: 50%;
+  height: 65%;
+  font-size: 6vh;
+  box-shadow: 5px 0px 10px 2px rgba(0, 0, 0, 0.123);
+}
+.nombre-y-apellido{
+  display: flex;
+  justify-content: space-around;
+}
+.nombre, .apellido{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.5vh;
+}
+.nombre-clase{
+  border-radius: 10px;
+  background-color: rgba(24, 24, 24, 0.151);
+  padding: 6% 50% 6% 0%;
+  border: none;
+}
+.email-clase{
+  border-radius: 10px;
+  background-color: rgba(24, 24, 24, 0.151);
+  padding: 1% 62% 1% 0%;
+  border: none;
+}
+.mensaje-clase{
+  border-radius: 10px;
+  background-color: rgba(24, 24, 24, 0.151);
+  padding: 0% 52% 10% 0%;
+  border: none;
+}
+.formulario-email{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.5vh;
+}
+.formulario-mensaje{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.5vh;
+}
+.boton{
+  padding: 1% 18% 1% 18%;
+  margin-top: 1%;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(68, 68, 68, 0.288);
+  transition: 0.3s;
+  color: white;
+  font-size: 2vh;
+}
+textarea{
+  transition: 0.3s;
+  color: white;
+  font-size: 1.8vh;
+}
+textarea:focus{
+  background-color: rgba(202, 209, 0, 0.137);
+}
+input{
+  transition: 0.3s;
+  color: white;
+  font-size: 1.8vh;
+}
+input:focus{
+  background-color: rgba(202, 209, 0, 0.158);
+}
+.boton:hover{
+  background-color: rgba(202, 209, 0, 0.178);
 }
 nav {
   position: fixed;
@@ -257,6 +378,16 @@ figure {
 .botones:hover {
   transform: scale(1.1);
   color: yellow;
+}
+
+.icon{
+ margin: 175% 4% 0 4%;
+ font-size: 2.5vh;
+ transition: 1s;
+ color: rgba(255, 255, 255, 0.466);
+}
+.icon:hover{
+  color: rgba(255, 255, 0, 0.459);
 }
 @media (min-width: 900px) and (max-width: 1600px) {
   .imagenhome {
@@ -480,5 +611,38 @@ figure {
   }
   .cajaport {
     font-size: 1.4vh;
+  }
+  .Contactame{
+    display: flex;
+    flex-direction: column;
+  }
+  .formulariolinks{
+    background-color: rgba(87, 87, 87, 0.253);
+    width: 95%;
+    height: 45%;
+    margin-left: 0;
+    font-size: 1.5vh;
+    padding: 1%;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 0px 25px 10px rgba(0, 0, 0, 0.315);
+  }
+  .formulario{
+    background-color: rgba(87, 87, 87, 0.253);
+    border-radius: 10px;
+    padding-top: 3%;
+    width: 95%;
+    height: 50%;
+    font-size: 2vh;
+    box-shadow: 5px 0px 10px 2px rgba(0, 0, 0, 0.123);
+  }
+  .nombre-clase{
+    padding: 6% 20% 6% 0%;
+  }
+  .email-clase{
+    padding: 2% 58% 2% 0%;
+  }
+  .mensaje-clase{
+    padding: 0% 37% 4% 0%;
   }
 }

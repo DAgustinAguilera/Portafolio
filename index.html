@@ -14,7 +14,11 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+      
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -83,9 +87,37 @@
         </div>
       </main>
       <main id="contactame" class="Contactame">
-        <div>
-          <h1>Y en este para que me contraten y me den dinero C:</h1>
-        </div>
+          <div class="formulariolinks">
+            <h1 class="informacion">Informacion de contacto:</h1>
+            <a href="#contactame" class="vinculos1"><i class="fa-solid fa-envelope"></i> agustindanielaguilera@gmail.com</a><br>
+            <br>
+            <a href="#contactame" class="vinculos1"><i class="fa-solid fa-phone"></i> 1125621920</a><br>
+            <h1 class="redes">Redes:</h1>
+            <a href="#contactame" class="vinculos giticon"><i class="fa-brands fa-github"></i></a>
+            <a href="#contactame" class="vinculos linkicon"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#contactame" class="vinculos igicon"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <form class="formulario">
+            <div class="nombre-y-apellido">
+              <div class="nombre">
+                <label for="nombre">Nombre </label>
+                <input class="nombre-clase" type="text" id="nombre">
+              </div>
+              <div class="apellido">
+                <label for="apellido">Apellido </label>
+                <input class="nombre-clase" type="text" id="apellido">
+              </div>
+            </div>
+            <div class="formulario-email">
+              <label for="email">Email</label>
+              <input class="email-clase" type="email" id="email">
+            </div>
+            <div class="formulario-mensaje">
+              <label for="mensaje">Mensaje</label>
+              <textarea class="mensaje-clase" name="mensaje" id="" cols="30" rows="10"></textarea>
+              <button class="boton" type="submit">Enviar</button>
+            </div>
+          </form>
       </main>
       <nav>
         <figure>
@@ -104,6 +136,11 @@
         </div>
         <div class="botones">
           <a class="botones" href="#contactame">Contactame</a>
+        </div>
+        <div class="iconitos">        
+          <i class="devicon-linkedin-plain icon"></i>
+          <i class="devicon-git-plain icon"></i>
+          <i class="fa-solid fa-envelope icon"></i>
         </div>
       </nav>
     </div>
